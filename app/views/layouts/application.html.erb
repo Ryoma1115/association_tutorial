@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <% if user_sign_in? %>
+    <% if user_signed_in? %>
       <%= link_to "新規投稿", new_tweet_path %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <%= link_to "マイページ", user_path(current_user.id) %>
